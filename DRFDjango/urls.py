@@ -23,4 +23,5 @@ urlpatterns = [
     path('', include('home.urls', namespace='home')),
     path('api-token-auth/', obtain_auth_token),
     path('api/', include(router.urls)),
+    path('api-auth/', include('rest_framework.urls'))
 ]
